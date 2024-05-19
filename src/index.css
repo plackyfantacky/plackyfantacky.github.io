@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    @font-face {
+        font-family: 'Source Sans 3';
+        font-style: normal;
+        font-weight: 200 900;
+        font-display: swap;
+        src: url('./assets/SourceSans3-VariableFont_wght.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Source Sans 3 Italic';
+        font-style: italic;
+        font-weight: 200 900;
+        font-display: swap;
+        src: url('./assets/SourceSans3-Italic-VariableFont_wght.ttf') format('truetype');
+    }
+
+    :root {
+        @apply antialiased;
+    }
+
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+
+}
