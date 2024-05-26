@@ -10,6 +10,14 @@ import Home from '@pages/Home'
 
 import './index.css'
 
+const TempContact = () => {
+    return (
+        <div>Contact me...or not yet. 
+            <a className="text-orange-700 underline" href="https://workhouse.au/" rel="nofollow">Better still go here.</a>
+        </div>
+    )
+}
+
 const router = createHashRouter([
     {
         path: "/",
@@ -31,14 +39,6 @@ const router = createHashRouter([
         ]
     }
 ]);
-
-const TempContact = () => {
-    return (
-        <div>Contact me...or not yet. 
-            <a className="text-orange-700 underline" href="https://workhouse.au/" rel="nofollow">Better still go here.</a>
-        </div>
-    )
-}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
