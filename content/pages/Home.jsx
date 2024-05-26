@@ -13,11 +13,11 @@ const Home = () => {
                     <li>React Native (when I can be bothered)</li>
                     <li>...and NOT React. Well maybe a little...</li>
                 </ul>
-                <p>This is (at most) a side project as my day job keeps me busy. <a className="text-orange-700 underline" href="https://workhouse.au/" rel="nofollow">You can find me here</a>.</p>
+                <p>This is (at most) a side project as my day job keeps me busy.
+                    <a className="text-orange-700 underline" href="https://workhouse.au/" rel="nofollow">You can find me here</a>.</p>
             </div>
         </main>
     );
 }
 
 export default Home;
-
