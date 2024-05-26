@@ -7,10 +7,10 @@ function App() {
     return (
         <>
             <header>
-                <h1>Scratchpad by @plackyfantacky</h1>
+                <h1>Static Nerd by @plackyfantacky</h1>
             </header>
             <main>
-                <p>stuff will go here eventually</p>
+                <p>pipeline/build tools first, pretty stuff later</p>
             </main>
             <footer>
 
