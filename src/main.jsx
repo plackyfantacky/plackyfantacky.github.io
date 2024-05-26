@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createHashRouter, RouterProvider, Route, Link } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 /** routing */
 import Root from '@routes/Root'
@@ -26,11 +26,19 @@ const router = createHashRouter([
             },
             {
                 path: "/contact",
-                element: <div>Contact me...or not yet. <a className="text-orange-700 underline" href="https://workhouse.au/" rel="nofollow">Better still go here.</a></div>
+                element: <TempContact />
             }
         ]
     }
 ]);
+
+const TempContact = () => {
+    return (
+        <div>Contact me...or not yet. 
+            <a className="text-orange-700 underline" href="https://workhouse.au/" rel="nofollow">Better still go here.</a>
+        </div>
+    )
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
