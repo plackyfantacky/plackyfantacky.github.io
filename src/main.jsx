@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider, Route, Link } from 'react-router-dom';
+import { createHashRouter, RouterProvider, Route, Link } from 'react-router-dom';
 
 /** routing */
 import Root from '@routes/Root'
@@ -10,7 +10,7 @@ import Home from '@pages/Home'
 
 import './index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <Root />,
@@ -22,11 +22,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <div>About</div>
+                element: <div>About me...or not yet.</div>
             },
             {
                 path: "/contact",
-                element: <div>Contact</div>
+                element: <div>Contact me...or not yet. <a className="text-orange-700 underline" href="https://workhouse.au/" rel="nofollow">Better still go here.</a></div>
             }
         ]
     }
