@@ -20,9 +20,41 @@
         src: url('./assets/SourceSans3-Italic-VariableFont_wght.ttf') format('truetype');
     }
 
+    @font-face {
+        font-family: 'Source Code Pro';
+        font-style: normal;
+        font-weight: 200 900;
+        font-display: swap;
+        src: url('./assets/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+    }
+
     :root {
         @apply antialiased;
     }
+
+    body {
+        @apply m-0;
+    }
+
+    #root {
+        @apply h-screen flex flex-col justify-between;
+    }
+
+    header {
+
+        #site_logo {
+
+            #logo_words_name,
+            #logo_words_role {
+                @apply hidden;
+            }
+        }
+    }
+
+    main {
+        @apply overflow-clip;
+    }
+
 
 }
 
